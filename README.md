@@ -46,5 +46,3 @@ $$Q_Z = \sum_{i=1}^{N} \left| 1 - \frac{4}{R B (B + 1)} \sum_{l=1}^{B} l w_{il} 
 Where:
 - $w_{il}$ = number of white games for the player on board $l$ of team $i$
 - The target board count for whites is $\frac{R}{2} \cdot \frac{B+1}{2} \cdot B$, and the factor $\frac{4}{R B (B+1)}$ normalises this to $1$
-
-# Solution Write-up
