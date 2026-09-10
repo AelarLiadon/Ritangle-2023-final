@@ -7,9 +7,20 @@ The solution found was optimal and earnt the Tiffin School team a runner-up posi
 ## Question Description
 
 The final stage question was a constrained combinatorial optimisation problem.
-The task was to find the optimal scheduling of a "jamboree" chess tournament such that the objective functions given were minimised.
+The task was to find the optimal scheduling of a *jamboree* chess tournament such that the detriment given was minimised.
 
-In a ‘jamboree’ chess tournament, $N$ teams, of $B$ players each, play $R$ rounds, of $B$ boards each. 
+In a *jamboree* chess tournament, $N$ teams, of $B$ players each, play $R$ rounds, of $B$ boards each. Within a team, players are ordered by strength (board 1 = strongest).
+
+### Constraints
+
+1. Nobody plays the same opponent twice, nor twice against opponents from the same team.
+2. Nobody plays a team-mate.
+3. Each pair of teams meets either $\left\lfloor \dfrac{RB}{N-1} \right\rfloor$ or $\left\lceil \dfrac{RB}{N-1} \right\rceil$ times.
+4. On any given board, at most one up-float or down-float per round.
+5. No player has more than one up-float or more than one down-float (across all rounds).
+6. All up-floats play as White.
+7. Per player, blacks and whites played differ by at most 1.
+8. Per team, over all rounds, blacks and whites played differ by at most 1.
 
 ### Objective Functions
 
